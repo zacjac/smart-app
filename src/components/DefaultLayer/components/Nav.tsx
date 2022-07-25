@@ -1,10 +1,11 @@
 import logo from "./logo.png";
 import { FaUser } from "react-icons/fa";
+import { BiMenu } from "react-icons/bi";
 
 export const Nav = () => {
   return (
-    <div className="bg-blue-200 p-3 px-32 text-blue-700 py-2  flex items-center justify-between font-bold ">
-      <div className="logo  ">
+    <div className="bg-blue-200 p-3 xl:px-28 sm:px-10 text-blue-700  py-2  flex items-center justify-between font-bold ">
+      <div className="logo hover:text-blue-500 ">
         <a href="/" className="flex items-center">
           <img className="w-8 " src={logo} alt="logo" />
           <h1 className="pl-4 ">Smart App</h1>
@@ -13,37 +14,55 @@ export const Nav = () => {
 
       {/* nave links */}
 
-      <nav className="flex items-center  justify-between">
-        <ul className="flex">
-          <li className="px-3">
-            <a href="/">Home</a>
+      <nav className="flex items-center justify-between">
+        <span>
+          <BiMenu className="font-bold text-4xl md:hidden" />
+        </span>
+        <ul className="md:flex sm:hidden ">
+          <li className="px-6">
+            <a href="/" className="hover:text-blue-500">
+              Home
+            </a>
           </li>
-          <li className="px-3">
-            <a href="/">About Us</a>
+          <li className="px-6">
+            <a href="/" className="hover:text-blue-500">
+              About Us
+            </a>
           </li>
-          <li className="px-3">
-            <a href="/"> Gospel</a>
+          <li className="px-6">
+            <a href="/" className="hover:text-blue-500">
+              {" "}
+              Gospel
+            </a>
           </li>
-          <li className="px-3">
-            <a href="/">Event</a>
+          <li className="px-6">
+            <a href="/" className="hover:text-blue-500">
+              Event
+            </a>
           </li>
-          <li className="px-3">
-            <a href="/">Gallary</a>
+          <li className="px-6">
+            <a href="/" className="hover:text-blue-500">
+              Gallery
+            </a>
           </li>
-          <li className="px-3">
-            <a href="/">Blog</a>
+          <li className="px-6">
+            <a href="/" className="hover:text-blue-500">
+              Blog
+            </a>
           </li>
-          <li className="px-3">
-            <a href="/">Contact</a>
+          <li className="px-6">
+            <a href="/" className="hover:text-blue-500">
+              Contact
+            </a>
           </li>
         </ul>
-
-        <div className="rounded-full w-7 h-7 ml-5 bg-blue-700 text-blue-200 flex justify-center items-center">
-          <a href="/">
-            <FaUser />
-          </a>
-        </div>
       </nav>
+
+      <div className="rounded-full w-7 h-7 ml-5 bg-blue-700 text-blue-200 flex justify-center items-center">
+        <a href="/">
+          <FaUser />
+        </a>
+      </div>
 
       {/* nave links */}
     </div>
