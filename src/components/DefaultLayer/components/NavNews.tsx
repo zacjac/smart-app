@@ -1,10 +1,8 @@
 import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 
-import React from "react";
-
 export const NavNews = () => {
   return (
-    <div className="bg-blue-800 py-3 px-28 xl:px-28 sm:px-10 text-white   font-bold flex items-center justify-between">
+    <div className="bg-blue-800 py-3 px-3 xl:px-28 sm:px-10 text-white  font-bold flex items-center justify-between">
       <div className="icon flex ">
         <a
           className="mx-1 hover:hover:text-blue-300 text-xl"
@@ -50,16 +48,13 @@ export const NavNews = () => {
               <p className="text-xs -py-6 -my-2 font-normal">Days</p>
             </span>
           </div>
-          <span className="font-bold hidden md:block hover:text-green-200 text-xs text-green-400">
+          <span className="font-bold hidden -mx-4 md:block hover:text-green-200 text-xs text-green-400">
             READ MORE
           </span>
         </a>
       </div>
       {/* upcoming event  */}
-      <a href="/" className="hover:text-blue-300">
-        {" "}
-        My Account
-      </a>
+
       {/* my account */}
     </div>
   );

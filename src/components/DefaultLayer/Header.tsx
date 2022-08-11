@@ -3,7 +3,7 @@ import { NavNews } from "./components/NavNews";
 
 export const Header = () => {
   return (
-    <header >
+    <header className="p-0 m-0">
       <NavNews />
       <Nav />
     </header>
